@@ -19,6 +19,22 @@
 		document.writeln((-10/3).integer());
 		document.writeln('"' + "    neat".trim() + '"');
 	
+	</script>
+	<br/>
+	<h4>Pseudoclassical Inheritence</h4>
+	<script>
+		var Mammal = function (name) {
+			this.name = name;
+		};
+		Mammal.prototype.get_name = function () {
+			return "This mammal's name is " + this.name;
+		};
+		var Cat = function (name) {
+			this.name = name;
+			this.saying = 'meow';
+		}.inherits(Mammal);
+		var summi_cat = new Cat("Simplest cat");
+		document.writeln(summi_cat.get_name());
 	</script>	
 	
 	</body>

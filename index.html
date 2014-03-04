@@ -1,0 +1,25 @@
+<html>
+	<head>
+	<script src="./AugmentingFunctionType.js"></script>
+	<script> 
+	Number.method('integer', function () {
+		return Math[this < 0 ? 'ceil': 'floor'](this);
+	});
+	String.method('trim', function () {
+		return this.replace(/^\s+|\s+$/g, '');
+	});
+	</script>
+	</head>
+	<body>
+	
+	<h4>Function Types:</h4>
+	
+	
+	<script>
+		document.writeln((-10/3).integer());
+		document.writeln('"' + "    neat".trim() + '"');
+	
+	</script>	
+	
+	</body>
+</html>
